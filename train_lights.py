@@ -31,14 +31,14 @@ def update():
 
     # Color capitol hill blue in both directions
     for i, pin in enumerate(northbound_station_leds):
-        pixels[pin] = (5,0,0)
+        pixels[pin] = (25,0,0)
         if i == CAPTIOL_HILL_IDX:
-            pixels[pin] = (1,0,10)
+            pixels[pin] = (10,0,100)
 
     for i, pin in enumerate(southbound_station_leds):
-        pixels[pin] = (5,0,0)
+        pixels[pin] = (25,0,0)
         if i == CAPTIOL_HILL_IDX:
-            pixels[pin] = (1,0,10)
+            pixels[pin] = (10,0,100)
 
 
     p = TrainGetter()
@@ -64,11 +64,11 @@ def update():
 
     for led in train_leds:
         # draw trains as green
-        pixels[led] = (0, 10, 0)
+        pixels[led] = (0, 55, 1)
 
     for led in train_and_station_leds:
         # draw trains in the station as yellow
-        pixels[led] = (5, 5, 0)
+        pixels[led] = (35, 25, 0)
 
     pixels.show()
 
