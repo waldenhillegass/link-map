@@ -4,6 +4,9 @@ This is a side project I made to display a representation of the Link light rail
 
 Stations are red leds and trains are green leds. Trains that are stopped at stations are yellow.
 
+Here's a video of the finished project:
+https://photos.app.goo.gl/NzShjevUZVjxWGqQ6
+
 ## Usage
 
 `python3 train_lights.py <your one bus away api key>`
